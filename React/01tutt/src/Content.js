@@ -1,12 +1,12 @@
 
 import ItemList from './ItemList';
-const Content = ({items, handelCheck, handelDelete}) => {
+const Content = ({items, handleCheck, handleDelete}) => {
     return ( 
         <main>
             <ItemList 
                 items={items}
-                handelCheck={handelCheck}
-                handelDelete={handelDelete}
+                handleCheck={handleCheck}
+                handleDelete={handleDelete}
             />
         </main>
      );
