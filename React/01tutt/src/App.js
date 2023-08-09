@@ -18,7 +18,9 @@ function App() {
   useEffect(() => {
     localStorage.setItem('shoppingList', JSON.stringify(items));
   }, [items]);
-
+  // when the [items] is empty, it will run only once when the page is loaded
+  // when the [items] is not empty, it will run every time the [items] is changed
+  
   const addItem = (itemName) => {
     const id = items.length ? items[items.length-1].id + 1 : 1;
     const addingItem = {id: id, checked:false, item:itemName};
